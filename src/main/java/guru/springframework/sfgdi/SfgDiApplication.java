@@ -20,10 +20,10 @@ public class SfgDiApplication {
         MyController myController = (MyController) ctx.getBean("myController");//Casting to MyController
 
         //Calling The sayHello() methode in the MyController
-        String greeting = myController.sayHello();
-
+        //String greeting = myController.sayHello();
+        System.out.println("------------------- Primary bean");
         //Printing the returned value to the console
-        System.out.println(greeting);
+        System.out.println(myController.sayHello());
 
         System.out.println("--------------------- Property");
 
